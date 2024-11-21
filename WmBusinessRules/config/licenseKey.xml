@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<SoftwareAG_License>
+<Component Id="SalesInfo">
+<SerialNumber>0000759773</SerialNumber>
+<LicenseKey>27C70B8187F3FCA65D33650361DA88E0</LicenseKey>
+<CustomerID>7522264</CustomerID>
+<CustomerName>EMIRATES WATER AND ELECTRICITYCOMPANY PJSC</CustomerName>
+<ContractDetails>2083095</ContractDetails>
+<ContractPosNumber>002720</ContractPosNumber>
+<LicenseTypeDetails>External</LicenseTypeDetails>
+<AutoCallHome/>
+</Component>
+<Component Id="ProductInfo">
+<ExpirationDate>2024/10/04</ExpirationDate>
+<OS>any</OS>
+<ProductCode>WOKAA</ProductCode>
+<ProductID/>
+<ProductName>Business Rules - Add-ons</ProductName>
+<ProductVersion>10.0</ProductVersion>
+<Usage>Development</Usage>
+<RenewalDate/>
+<HigherLevPosNr>002520</HigherLevPosNr>
+<HigherLevProdCode>WMPR3</HigherLevProdCode>
+<HigherLevProdName>BPMS Processor Core Based Bundle</HigherLevProdName>
+</Component>
+<Component Id="RulesServer">
+<ProductCode>WOKAA</ProductCode>
+<ProductVersion>10.0</ProductVersion>
+<Container>IS</Container>
+</Component>
+<Component Id="RulesFeatures">
+<PublicAPI>yes</PublicAPI>
+<ProcessActions>yes</ProcessActions>
+<ServiceActions>yes</ServiceActions>
+<CreateDataActions>yes</CreateDataActions>
+<ExternalEventRules>yes</ExternalEventRules>
+<SynchronousInvokeFromBPM>yes</SynchronousInvokeFromBPM>
+<PredictiveAnalyticsActions>yes</PredictiveAnalyticsActions>
+</Component>
+<Component Id="RulesEdition">
+<Edition>Full</Edition>
+<AdditionalFeatures>yes</AdditionalFeatures>
+</Component>
+<Component Id="LicenseInfo">
+<PriceUnit>PCS</PriceUnit>
+<PriceQuantity>16</PriceQuantity>
+<TypeOfInstallation>Development</TypeOfInstallation>
+<LicenseType>-Subscription</LicenseType>
+<ExtendedRights/>
+<LicenseVersion>1.2</LicenseVersion>
+<Metering/>
+</Component>
+</SoftwareAG_License>

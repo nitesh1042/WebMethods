@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?><wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" name="SelectDb" targetNamespace="http://ManuguntaNiteshPC/Soap.SoapTaskWithProvider:SelectDb" xmlns:soapjms="http://www.w3.org/2010/soapjms/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://ManuguntaNiteshPC/Soap.SoapTaskWithProvider:SelectDb" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+      
+    <wsdl:types>
+            
+        <xsd:schema targetNamespace="http://ManuguntaNiteshPC/Soap.SoapTaskWithProvider:SelectDb" xmlns:tns="http://ManuguntaNiteshPC/Soap.SoapTaskWithProvider:SelectDb" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                      
+            <xsd:element name="selectDbService" type="tns:selectDbService"/>
+                      
+            <xsd:element name="selectDbServiceResponse" type="tns:selectDbServiceResponse"/>
+                      
+            <xsd:complexType name="selectDbService">
+                            
+                <xsd:sequence>
+                                  
+                    <xsd:element name="id" nillable="true" type="xsd:string"/>
+                                
+                </xsd:sequence>
+                          
+            </xsd:complexType>
+                      
+            <xsd:complexType name="selectDbServiceResponse">
+                            
+                <xsd:sequence>
+                                  
+                    <xsd:element maxOccurs="unbounded" name="opt" nillable="true" type="tns:opt"/>
+                                
+                </xsd:sequence>
+                          
+            </xsd:complexType>
+                      
+            <xsd:complexType name="opt">
+                            
+                <xsd:sequence>
+                                  
+                    <xsd:element name="id" nillable="true" type="xsd:string"/>
+                                  
+                    <xsd:element name="name" nillable="true" type="xsd:string"/>
+                                  
+                    <xsd:element name="age" nillable="true" type="xsd:string"/>
+                                
+                </xsd:sequence>
+                          
+            </xsd:complexType>
+                    	
+        </xsd:schema>
+          
+    </wsdl:types>
+      
+    <wsdl:message name="SelectDb_PortType_selectDbServiceResponse">
+            
+        <wsdl:part name="parameters" element="tns:selectDbServiceResponse">
+    </wsdl:part>
+          
+    </wsdl:message>
+      
+    <wsdl:message name="SelectDb_PortType_selectDbService">
+            
+        <wsdl:part name="parameters" element="tns:selectDbService">
+    </wsdl:part>
+          
+    </wsdl:message>
+      
+    <wsdl:portType name="SelectDb_PortType">
+            
+        <wsdl:operation name="selectDbService">
+                  
+            <wsdl:input message="tns:SelectDb_PortType_selectDbService">
+    </wsdl:input>
+                  
+            <wsdl:output message="tns:SelectDb_PortType_selectDbServiceResponse">
+    </wsdl:output>
+                
+        </wsdl:operation>
+          
+    </wsdl:portType>
+      
+    <wsdl:binding name="Soap_SoapTaskWithProvider_SelectDb_Binder" type="tns:SelectDb_PortType">
+            
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+            
+        <wsdl:operation name="selectDbService">
+                  
+            <soap:operation soapAction="Soap_SoapTaskWithProvider_SelectDb_Binder_selectDbService" style="document"/>
+                  
+            <wsdl:input>
+                        
+                <soap:body parts="parameters" use="literal"/>
+                      
+            </wsdl:input>
+                  
+            <wsdl:output>
+                        
+                <soap:body parts="parameters" use="literal"/>
+                      
+            </wsdl:output>
+                
+        </wsdl:operation>
+          
+    </wsdl:binding>
+      
+    <wsdl:service name="Soap.SoapTaskWithProvider.SelectDb">
+            
+        <wsdl:port name="Soap_SoapTaskWithProvider_SelectDb_Port" binding="tns:Soap_SoapTaskWithProvider_SelectDb_Binder">
+                  
+            <soap:address location="http://ManuguntaNiteshPC:5555/ws/Soap.SoapTaskWithProvider:SelectDb/Soap_SoapTaskWithProvider_SelectDb_Port"/>
+                
+        </wsdl:port>
+          
+    </wsdl:service>
+    
+</wsdl:definitions>

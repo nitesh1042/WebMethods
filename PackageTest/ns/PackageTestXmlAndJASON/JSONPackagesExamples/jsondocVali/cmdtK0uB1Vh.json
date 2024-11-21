@@ -1,0 +1,24 @@
+{
+    "title": "input",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "string"
+        },
+        "name": {
+            "type": "string"
+        },
+        "age": {
+            "type": "string"
+        },
+        "sal": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "id",
+        "name",
+        "age",
+        "sal"
+    ]
+}
